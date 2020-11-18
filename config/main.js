@@ -113,7 +113,45 @@ let questionArray = ['Czy jeżeli miałabyś możliwość przeżyć jeden dzień
 'Powiedz, co myślisz o sobie, jak się oceniasz, jakie jest Twoje zdanie o Tobie samym i jak to się ma do tego, jak widzą Cię inni.',
 ];
 
+let egzaminQuestionArray = ['1. Omówić zarządzanie procesorem na przykładzie wybranych algorytmów szeregowania',
+'zadań',
+'2. Omówić zarządzanie pamięcią operacyjną na przykładzie stronicowania pamięci i pamięci',
+'wirtualnej',
+'3. Scharakteryzować zakleszczenie',
+'4. Wyjaśnić zjawisko wycieku pamięci',
+'5. Omówić wskaźniki i referencje w programowaniu',
+'6. Scharakteryzować podstawowe elementy architektury komputera',
+'7. Omówić cykl rozkazowy w architekturze von Neumanna',
+'8. Przedstawić projektowanie układów logiki cyfrowej',
+'9. Scharakteryzować systemy wbudowane i kierunki ich rozwoju',
+'10. Opisać podstawowe bloki systemu wbudowanego',
+'11. Opisać sposób zarządzania przerwaniami w mikrokontrolerach',
+'12. Omówić podstawowe struktury danych',
+'13. Omówić algorytmy wyszukiwania na przykładzie wyszukiwania binarnego i drzew',
+'poszukiwań binarnych',
+'14. Omówić fazy modelu procesu wytwarzania oprogramowania na przykładzie modeli',
+'spiralnych',
+'15. Omówić modelowanie dziedziny problemu w notacji UML z perspektywy opisu struktury i jej',
+'związku z opisem zachowań na przykładzie wybranych diagramów',
+'16. Omówić podstawowe klasy złożoności obliczeniowej algorytmów',
+'17. Scharakteryzować algorytmy rekurencyjne',
+'18. Omówić algorytmy sortowania',
+'19. Przedstawić relacyjny model danych: struktury, operatory i ograniczenia integralnościowe',
+'20. Omówić sposób tworzenia i zastosowania indeksów w bazach danych',
+'21. Omówić transakcję i jej własności',
+'22. Omówić architektury sieci komputerowych, modele OSI/ISO i TCP/IP',
+'23. Omówić adresowanie IP v. 4 i IP v. 6',
+'24. Scharakteryzować szyfrowanie symetryczne i szyfrowanie asymetryczne, omówić metody i',
+'problemy generowania kluczy oraz podać przykłady zastosowania',
+'25. Omówić pojęcia infrastruktury klucza publicznego i podpisu elektronicznego',
+'26. Omówić budowę systemu ekspertowego',
+'27. Omówić działanie algorytmu genetycznego; podać przykłady zastosowań',
+'28. Scharakteryzować systemy przetwarzania rozproszonego',
+'29. Omówić podstawowe mechanizmy programowania obiektowego: abstrakcja, hermetyzacja',
+'(enkapsulacja), dziedziczenie, polimorfizm',
+'30. Omówić obsługę formularzy HTML w aplikacjach internetowych',
+]
 
 document.getElementById('getQuestion').addEventListener('click', ()=>{
-    document.getElementById("question").innerHTML = questionArray[Math.floor(Math.random()*questionArray.length)];
+    document.getElementById("question").innerHTML = egzaminQuestionArray[Math.floor(Math.random()*egzaminQuestionArray.length)];
 });
